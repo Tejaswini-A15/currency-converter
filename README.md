@@ -14,15 +14,4 @@ def convert_currency(from_currency, to_currency, amount):
     except KeyError:
         return None
 
-# Example usage
-from_currency = input("From currency (USD, INR, EUR): ").upper()
-to_currency = input("To currency (USD, INR, EUR): ").upper()
-try:
-    amount = float(input("Amount: "))
-    converted = convert_currency(from_currency, to_currency, amount)
-    if converted is not None:
-        print(f"{amount} {from_currency} = {converted:.2f} {to_currency}")
-    else:
-        print("Conversion rate not available.")
-except ValueError:
-    print("Invalid amount.")
+
